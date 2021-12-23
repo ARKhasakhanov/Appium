@@ -1,0 +1,14 @@
+{
+  "appium": {
+    "capabilities": {
+      "app": "bs://b323db93fec2e688d8c46b932b2e0ba1d9beb6fd",
+      "device": "Google Pixel 4",
+      "os_version": "10.0",
+      "project": "First Java Ferrm Mobail Test",
+      "build": "browserstack-build-1",
+      "name": "vk test"
+    },
+    "url": "http://hub.browserstack.com/wd/hub",
+    "implicitlyWait": 5
+  }
+}

@@ -1,0 +1,16 @@
+Upload Your app
+
+// Upload an app using the file manager to generate an "app_url" value. It uniquely identifies your uploaded app on BrowserStack.
+{"app_url":"bs://b323db93fec2e688d8c46b932b2e0ba1d9beb6fd"}
+// In your test script, use this "app_url" value to specify the application under test using the "app" capability. During test execution, your app will automatically be installed and launched on the device being tested.
+{
+"app", "bs://b323db93fec2e688d8c46b932b2e0ba1d9beb6fd"
+}
+
+Upload via REST API
+
+Use our REST API to upload an Android app (.apk or .aab file) or an iOS app ( .ipa file) from your local filesystem. Use the command-line tool cURL to upload your app as shown below :
+
+curl -u "bsuser_2sgrJC:FfDynGUptuFnvFa44DEW" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.apk"
+
+
